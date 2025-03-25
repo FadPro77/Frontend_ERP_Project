@@ -90,7 +90,7 @@ const ScreenHistory = () => {
                 <Col className="d-flex flex-column align-items-end me-3">
                   {/* Stok (diletakkan di atas) */}
                   <div className="fw-bold fs-5 text-danger mb-2">
-                    Stock: 1234
+                    Stock: 1234123
                   </div>
 
                   <div className="d-flex align-items-center mb-3">
