@@ -1,0 +1,11 @@
+/* Mengatur tinggi maksimum modal */
+.terms-modal .modal-dialog {
+  max-width: 600px; /* Atur lebar modal */
+  max-height: 80vh; /* Modal tidak lebih besar dari 80% tinggi layar */
+}
+
+/* Membuat modal body scrollable */
+.terms-modal .modal-body {
+  max-height: 50vh; /* Batasi tinggi konten agar tidak melebihi modal */
+  overflow-y: auto; /* Tambahkan scrollbar jika konten lebih panjang */
+}

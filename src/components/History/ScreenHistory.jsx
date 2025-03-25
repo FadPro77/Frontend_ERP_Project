@@ -15,7 +15,7 @@ import { VscAdd, VscChromeMinimize } from "react-icons/vsc";
 import { IoTrashOutline } from "react-icons/io5";
 import { Modal } from "react-bootstrap";
 
-const ScreenHomepage = () => {
+const ScreenHistory = () => {
   const [quantity, setQuantity] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const handleShowModal = () => setShowModal(true);
@@ -48,16 +48,6 @@ const ScreenHomepage = () => {
         }}
       >
         <Container className=" d-flex flex-column align-items-center">
-          <img
-            src="src/assets/img/logan 4.png"
-            style={{
-              marginTop: "-1rem",
-              width: "99vw",
-              height: "25rem",
-              objectFit: "cover",
-            }}
-          />
-
           {/* Card berada di bawah */}
           <Card
             style={{
@@ -90,16 +80,16 @@ const ScreenHomepage = () => {
                     className="fw-bold mb-1 fs-4 mt-3"
                     style={{ width: "25rem" }}
                   >
-                    Kecap Manis - Lombok Gandaria 1 Karton
+                    RIWAYAT
                   </h5>
-                  <p className="fw-bold fs-5 mt-5">KLMG1</p>
+                  <p className="fw-bold fs-5 mt-5">R1W4Y4T</p>
                 </Col>
 
                 {/* Wrapper untuk semua elemen yang harus ada di kanan */}
                 <Col className="d-flex flex-column align-items-end me-3">
                   {/* Stok (diletakkan di atas) */}
                   <div className="fw-bold fs-5 text-danger mb-2">
-                    Stock: 1234
+                    Stock: 1234123
                   </div>
 
                   <div className="d-flex align-items-center mb-3">
@@ -284,4 +274,4 @@ const ScreenHomepage = () => {
   );
 };
 
-export default ScreenHomepage;
+export default ScreenHistory;
