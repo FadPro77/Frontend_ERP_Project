@@ -42,15 +42,15 @@ const NavigationBar = () => {
                   as={Link}
                   to="/"
                   style={{ cursor: "pointer" }}
-                  className="fw-bold me-3"
+                  className="fw-bold me-5"
                 >
                   Beranda
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
-                  to="sadadas"
+                  to="/riwayat"
                   style={{ cursor: "pointer" }}
-                  className="fw-bold"
+                  className="fw-bold ms-4"
                 >
                   Riwayat
                 </Nav.Link>
@@ -59,9 +59,9 @@ const NavigationBar = () => {
                 <Nav.Link
                   as={Link}
                   to="/login"
-                  className="rounded-3 text-center fw-bold fs-5"
+                  className="rounded-3 text-center  fw-bold fs-5"
                   style={{
-                    width: "9rem",
+                    width: "8rem",
                     borderColor: "#db411f",
                     borderStyle: "solid",
                     borderWidth: "3px",

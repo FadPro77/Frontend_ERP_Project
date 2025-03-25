@@ -2,7 +2,7 @@
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useRef } from "react";
-import GuestLayout from "../layouts/GuestLayout";
+import AuthLayout from "../layouts/AuthLayout";
 import LoginForm from "../components/Login";
 import { motion } from "motion/react";
 export const Route = createLazyFileRoute("/login")({
@@ -13,12 +13,12 @@ function Login() {
   const [openLoginForm, setOpenLoginForm] = useState(true);
   return (
     <>
-      <GuestLayout
+      <AuthLayout
         openLoginForm={openLoginForm}
         setOpenLoginForm={setOpenLoginForm}
       >
         {openLoginForm && <LoginForm />}
-      </GuestLayout>
+      </AuthLayout>
     </>
   );
 }
