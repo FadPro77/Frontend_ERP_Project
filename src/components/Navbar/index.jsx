@@ -6,6 +6,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import Image from "react-bootstrap/Image";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link, useNavigate } from "@tanstack/react-router";
+import logoNav from "../../assets/img/LoremIpsum.png";
 
 const NavigationBar = () => {
   return (
@@ -28,7 +29,7 @@ const NavigationBar = () => {
               className="fw-bold"
             >
               <img
-                src="src/assets/img/LoremIpsum.png"
+                src={logoNav}
                 width="80"
                 height="80"
                 className="d-inline-block align-center"

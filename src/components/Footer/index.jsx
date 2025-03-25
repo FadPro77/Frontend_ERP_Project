@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import imgDummy1 from "../../assets/img/LoremIpsum.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
           <Row className="d-flex flex-column flex-lg-row mt-3">
             <Col>
               <img
-                src="src/assets/img/LoremIpsum.png"
+                src={imgDummy1}
                 style={{ width: "10rem", marginLeft: "-5rem" }}
               />
             </Col>
