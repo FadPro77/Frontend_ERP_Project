@@ -14,6 +14,8 @@ import { Link } from "@tanstack/react-router";
 import { VscAdd, VscChromeMinimize } from "react-icons/vsc";
 import { IoTrashOutline } from "react-icons/io5";
 import { Modal } from "react-bootstrap";
+import imgDummy1 from "../../assets/img/logan 4.png";
+import imgDummy2 from "../../assets/img/sg-11134201-22100-qf7z0zvzuiiv8c 1.png";
 
 const ScreenHomepage = () => {
   const [quantity, setQuantity] = useState(0);
@@ -49,7 +51,7 @@ const ScreenHomepage = () => {
       >
         <Container className=" d-flex flex-column align-items-center">
           <img
-            src="src/assets/img/logan 4.png"
+            src={imgDummy1}
             style={{
               marginTop: "-1rem",
               width: "99vw",
@@ -73,7 +75,7 @@ const ScreenHomepage = () => {
                 {/* Gambar Produk */}
                 <Col xs="auto">
                   <img
-                    src="src/assets/img/sg-11134201-22100-qf7z0zvzuiiv8c 1.png"
+                    src={imgDummy2}
                     style={{
                       width: "9rem",
                       height: "9rem",

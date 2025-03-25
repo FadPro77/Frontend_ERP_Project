@@ -14,6 +14,7 @@ import { Link } from "@tanstack/react-router";
 import { VscAdd, VscChromeMinimize } from "react-icons/vsc";
 import { IoTrashOutline } from "react-icons/io5";
 import { Modal } from "react-bootstrap";
+import imgDummy1 from "../../assets/img/sg-11134201-22100-qf7z0zvzuiiv8c 1.png";
 
 const ScreenHistory = () => {
   const [quantity, setQuantity] = useState(0);
@@ -63,7 +64,7 @@ const ScreenHistory = () => {
                 {/* Gambar Produk */}
                 <Col xs="auto">
                   <img
-                    src="src/assets/img/sg-11134201-22100-qf7z0zvzuiiv8c 1.png"
+                    src={imgDummy1}
                     style={{
                       width: "9rem",
                       height: "9rem",
