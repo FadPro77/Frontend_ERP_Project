@@ -82,7 +82,7 @@ const ScreenHistory = () => {
                   >
                     RIWAYAT
                   </h5>
-                  <p className="fw-bold fs-5 mt-5">KLMG1</p>
+                  <p className="fw-bold fs-5 mt-5">R1W4Y4T</p>
                 </Col>
 
                 {/* Wrapper untuk semua elemen yang harus ada di kanan */}
