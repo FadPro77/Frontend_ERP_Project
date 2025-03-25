@@ -11,32 +11,65 @@ const NavigationBar = () => {
   return (
     <>
       {["xxl"].map((expand) => (
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          style={{
+            backgroundColor: "#d2db1f",
+            height: "5rem",
+            borderRadius: "0 0 20px 20px",
+          }}
+        >
           <Container>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand
+              as={Link}
+              to="/"
+              style={{ cursor: "pointer" }}
+              className="fw-bold"
+            >
+              <img
+                src="src/assets/img/LoremIpsum.png"
+                width="80"
+                height="80"
+                className="d-inline-block align-center"
+                alt="Logo dummy"
+              />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-                <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
-                </NavDropdown>
+              <Nav className="mx-auto ">
+                <Nav.Link
+                  as={Link}
+                  to="/"
+                  style={{ cursor: "pointer" }}
+                  className="fw-bold me-3"
+                >
+                  Beranda
+                </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="sadadas"
+                  style={{ cursor: "pointer" }}
+                  className="fw-bold"
+                >
+                  Riwayat
+                </Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="#deets">More deets</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                  Dank memes
+                <Nav.Link
+                  as={Link}
+                  to="/login"
+                  className="rounded-3 text-center fw-bold fs-5"
+                  style={{
+                    width: "9rem",
+                    borderColor: "#db411f",
+                    borderStyle: "solid",
+                    borderWidth: "3px",
+                    color: "#db411f",
+                    backgroundColor: "#ebdfdd",
+                  }}
+                >
+                  Login
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
